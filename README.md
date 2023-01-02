@@ -1,1 +1,45 @@
-# gcn_cz
+# GCN_Cz
+
+***
+
+## Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain
+
+***
+
+This GCN was build upon the original implementation by Ryu et al. (http://github.com/seongokryu/augmented-gcn)
+
+For the moment, the GCN is implemented in tensorflow 1. A conda environment (gcn_env.yml) is provided with the requiered dependecies already instaled (tensorflow-gpu, pandas, scikit-learn, etc). 
+
+### 1. Clone the repository
+
+> git clone 
+
+### 2. Import conda environment: 
+
+> conda env create -f gcn_env.yml
+
+### 3. Activate the conda environment
+
+> conda activate tf1
+
+### 4. Convert SMILES to 2D graphs 
+
+Files containing the compounds SMILES and activity labels are provided in folders AID1478_train and AID1478_test.
+Run the script smilesToGraph_mod2 to generate the graphs from train and test smiles. 
+
+> python smilesToGraph_mod2.py AID1478_train 10000 1
+> python smilesToGraph_mod2.py AID1478_test 10000 1
+
+### 5. Train the GCN 
+
+> python augmented_GCN_custom_4classPred.py 
+
+
+
+
+
+
+
+
+
+
