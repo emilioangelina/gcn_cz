@@ -24,13 +24,11 @@ For the moment, the GCN is implemented in tensorflow 1. A conda environment (gcn
 
 ### 4. Convert SMILES to 2D graphs 
 
-Files containing the compounds SMILES and activity labels are provided in folders AID1478_train and AID1478_test.
-Run the script smilesToGraph_mod2 to generate the graphs from train and test smiles. 
+Files containing the compounds SMILES and activity labels are provided in compressed files AID1478_train-zip and AID1478_test.zip.
+Uncompress the zip files and run the script smilesToGraph_mod2 to generate the graphs from train and test smiles. 
 
 > python smilesToGraph_mod2.py AID1478_train 10000 1
 > python smilesToGraph_mod2.py AID1478_test 10000 1
-
-Alternatively, molecular graphs already generated are provided in compressed files AID1478_test.tar.xz and AID1478_train.tar.xz
 
 ### 5. Train the GCN 
 
