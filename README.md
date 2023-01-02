@@ -12,7 +12,7 @@ For the moment, the GCN is implemented in tensorflow 1. A conda environment (gcn
 
 ### 1. Clone the repository
 
-> git clone 
+> git clone https://github.com/emilioangelina/gcn_cz.git
 
 ### 2. Import conda environment: 
 
@@ -29,6 +29,8 @@ Run the script smilesToGraph_mod2 to generate the graphs from train and test smi
 
 > python smilesToGraph_mod2.py AID1478_train 10000 1
 > python smilesToGraph_mod2.py AID1478_test 10000 1
+
+Alternatively, molecular graphs already generated are provided in compressed files AID1478_test.tar.xz and AID1478_train.tar.xz
 
 ### 5. Train the GCN 
 
